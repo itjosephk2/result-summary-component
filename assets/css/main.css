@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Barlow+Semi+Condensed:wght@400;600;700&family=Figtree:wght@300;400;500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Outfit:wght@400;700&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.results-summary-component {
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+.score-box {
+  width: 100%;
+  height: 356px;
+  background-image: linear-gradient(#7755FF, #2F2CE9);
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.score-title {
+  margin-top: 10px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #CAC9FF;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.score-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background-image: linear-gradient(#4D21C9, #2521C9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.score {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 56px;
+  color: #fff;
+  line-height: 72px;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+.max-score {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #CAC9FF;
+}
+.score-review-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  margin-bottom: 32px;
+}
+.score-review-title {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  padding: 2px 0;
+}
+.score-review-text {
+  padding: 2px 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #CAC9FF;
+  text-align: center;
+}
+.summary-box {
+  height: calc(100vh - 356px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.summary-title {
+  width: 315px;
+  text-align: left;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #303B59;
+}
+.result-box {
+  width: 315px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.result-box-title {
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.result-box-score {
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #303B59;
+}
+.continue-button {
+  font-family: 'Hanken Grotesk', sans-serif;
+  background-color: #303B59;
+  width: 315px;
+  height: 56px;
+  text-align: center;
+  color: #FFF;
+  border: none;
+  box-shadow: none;
+  border-radius: 128px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.opaque-text {
+  color: #9899A8;
+}
+.red {
+  background-color: #FF5555;
+  color: #FF5555;
+}
+.orange {
+  background-color: #FFB21E;
+  color: #FFB21E;
+}
+.green {
+  background-color: #00BB8F;
+  color: #00BB8F;
+}
+.blue {
+  background-color: #1125D6;
+  color: #1125D6;
+}
+.white-overlay {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #ecf2ff;
+  }
+  .results-summary-component {
+    height: 512px;
+    width: 736px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 32px;
+  }
+  .score-box {
+    width: 368px;
+    height: 512px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .score-title {
+    font-size: 24px;
+  }
+  .score-circle {
+    width: 200px;
+    height: 200px;
+  }
+  .score-review-box {
+    height: 134px;
+  }
+  .score-review-title {
+    font-size: 32px;
+  }
+  .score-review-text {
+    font-size: 18px;
+  }
+  .summary-box {
+    margin-right: 40px;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .summary-title {
+    width: 288px;
+    font-size: 24px;
+  }
+  .result-box {
+    width: 288px;
+    height: 56px;
+  }
+  .continue-button {
+    width: 288px;
+  }
+  .continue-button:hover {
+    background-image: linear-gradient(#7755FF, #2F2CE9);
+    cursor: pointer;
+  }
+}
